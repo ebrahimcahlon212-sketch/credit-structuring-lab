@@ -6,7 +6,7 @@ I built this to get the cash-flow mechanics properly into my hands: where the mo
 
 ## What it does
 
-- **CLN mode**: a funded note leg with quarterly coupons, recovery after default, and principal back on survival. Solves the fair coupon — the coupon that zeroes investor NPV at the stated issue price.
+- **CLN mode**: a funded note leg with quarterly coupons, recovery after default, and principal back on survival. Solves the fair coupon, the coupon that zeroes investor NPV at the stated issue price.
 - **Repack mode**: note proceeds buy a reference bond; the engine compares expected asset and note cash flows after an annual operating fee and solves the coupon that zeroes the SPV residual.
 - Constant hazard from the market shorthand `spread / LGD`; flat continuously compounded discounting; recovery settles on the next quarterly payment date.
 - Named scenarios plus a two-dimensional spread/recovery grid.
@@ -76,7 +76,7 @@ How the fixed 7.25% note responds to different spread, recovery and rate assumpt
 | Wider credit | 450 bp | 40% | 9.411% | 92.043 |
 | Default stress | 700 bp | 20% | 12.479% | 81.526 |
 
-These probabilities are model-implied by the spread/LGD approximation — risk-neutral-style quantities, not forecasts.
+These probabilities are model-implied by the spread/LGD approximation, risk-neutral-style quantities, not forecasts.
 
 ## How it works
 
