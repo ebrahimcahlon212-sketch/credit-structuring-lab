@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "credit-structuring-lab"
+version = "0.1.0"
+description = "Transparent reduced-form analytics for credit-linked notes and simple repacks"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+credit-structuring-lab = "credit_structuring_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

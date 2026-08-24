@@ -1,0 +1,1298 @@
+{
+  "run": {
+    "run_id": "20260824-1bb76d106883",
+    "generated_at": "2026-08-24T15:02:27.148254Z"
+  },
+  "schema_version": "1.0",
+  "methodology": {
+    "default_model": "constant hazard calibrated as spread divided by loss given default",
+    "cashflow_timing": "quarterly; default recovery settles on the next payment date",
+    "coupon_on_default": "no accrued coupon is paid in a default interval",
+    "discounting": "continuous compounding at a flat annual discount rate",
+    "cln_issuer_scope": "contractual note cash flows before external hedge or collateral economics",
+    "repack_scope": "reference bond asset cash flows less note funding and operating fees"
+  },
+  "base_case": {
+    "terms": {
+      "name": "Five-year bond cash-flow repack",
+      "mode": "repack",
+      "valuation_date": "2026-08-24",
+      "notional": 1000000,
+      "term_years": 5,
+      "payments_per_year": 4,
+      "issue_price_pct": 97.5,
+      "coupon_rate_pct": 5.1,
+      "credit_spread_bps": 250,
+      "recovery_rate_pct": 40,
+      "discount_rate_pct": 3.5,
+      "funding_rate_pct": 3.5,
+      "reference_coupon_rate_pct": 5.25,
+      "reference_price_pct": 97,
+      "annual_fee_bps": 15
+    },
+    "metrics": {
+      "hazard_rate_pct": 4.166666666666667,
+      "loss_given_default_pct": 60.0,
+      "survival_to_maturity_pct": 81.19363461506349,
+      "cumulative_default_probability_pct": 18.80636538493651,
+      "undiscounted_expected_loss": 112838.19230961904,
+      "undiscounted_expected_loss_pct": 11.283819230961905,
+      "fair_coupon_rate_pct": 5.22154934201787,
+      "fair_coupon_target": "zero issuer/SPV NPV"
+    },
+    "economics": {
+      "issue_proceeds": 975000.0,
+      "reference_asset_purchase": 970000.0,
+      "reference_asset_pv": 966464.9311378537,
+      "note_coupon_pv": 209791.34544595995,
+      "note_principal_and_recovery_pv": 750503.2520023066,
+      "note_cashflows_pv": 960294.5974482666,
+      "funding_coupon_component_pv": 143974.45275703134,
+      "credit_margin_component_pv": 65816.89268892861,
+      "operating_fee_pv": 6170.333689587057,
+      "investor_npv": -14705.402551733423,
+      "issuer_npv": 4999.999999999997,
+      "investor_value_pct": 96.02945974482667
+    },
+    "cashflows": [
+      {
+        "period": 1,
+        "payment_date": "2026-11-24",
+        "year_fraction": 0.25,
+        "time_years": 0.25,
+        "survival_probability": 0.9896373989149966,
+        "default_probability": 0.01036260108500342,
+        "discount_factor": 0.9912881698401698,
+        "note_coupon_expected": 12617.876836166206,
+        "note_recovery_expected": 4145.040434001368,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 16762.917270167574,
+        "note_total_pv": 16616.88158192659,
+        "funding_coupon_component_expected": 8659.32724050622,
+        "credit_margin_component_expected": 3958.549595659986,
+        "reference_coupon_expected": 12988.99086075933,
+        "reference_recovery_expected": 4145.040434001368,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 17134.031294760698,
+        "reference_total_pv": 16984.762524167527,
+        "operating_fee_expected": 371.1140245931237,
+        "operating_fee_pv": 367.8809422409374,
+        "issuer_net_expected": 5.684341886080802e-14,
+        "issuer_net_pv": 5.6348208649988565e-14
+      },
+      {
+        "period": 2,
+        "payment_date": "2027-02-24",
+        "year_fraction": 0.25,
+        "time_years": 0.5,
+        "survival_probability": 0.9793821813312401,
+        "default_probability": 0.01025521758375647,
+        "discount_factor": 0.9826522356650732,
+        "note_coupon_expected": 12487.122811973311,
+        "note_recovery_expected": 4102.087033502588,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 16589.2098454759,
+        "note_total_pv": 16301.424142573936,
+        "funding_coupon_component_expected": 8569.59408664835,
+        "credit_margin_component_expected": 3917.5287253249608,
+        "reference_coupon_expected": 12854.391129972526,
+        "reference_recovery_expected": 4102.087033502588,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 16956.478163475113,
+        "reference_total_pv": 16662.321176344813,
+        "operating_fee_expected": 367.268317999215,
+        "operating_fee_pv": 360.89703377087966,
+        "issuer_net_expected": -2.2737367544323206e-12,
+        "issuer_net_pv": -2.2342925050567675e-12
+      },
+      {
+        "period": 3,
+        "payment_date": "2027-05-24",
+        "year_fraction": 0.25,
+        "time_years": 0.75,
+        "survival_probability": 0.9692332344763441,
+        "default_probability": 0.01014894685489598,
+        "discount_factor": 0.9740915362817815,
+        "note_coupon_expected": 12357.723739573388,
+        "note_recovery_expected": 4059.5787419583917,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 16417.30248153178,
+        "note_total_pv": 15991.955395837995,
+        "funding_coupon_component_expected": 8480.79080166801,
+        "credit_margin_component_expected": 3876.932937905378,
+        "reference_coupon_expected": 12721.186202502016,
+        "reference_recovery_expected": 4059.5787419583917,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 16780.764944460407,
+        "reference_total_pv": 16346.0011047329,
+        "operating_fee_expected": 363.46246292862907,
+        "operating_fee_pv": 354.04570889490833,
+        "issuer_net_expected": -2.7284841053187847e-12,
+        "issuer_net_pv": -2.6577932738703972e-12
+      },
+      {
+        "period": 4,
+        "payment_date": "2027-08-24",
+        "year_fraction": 0.25,
+        "time_years": 1.0,
+        "survival_probability": 0.9591894571091382,
+        "default_probability": 0.010043777367205964,
+        "discount_factor": 0.9656054162575665,
+        "note_coupon_expected": 12229.665578141512,
+        "note_recovery_expected": 4017.5109468823857,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 16247.176525023897,
+        "note_total_pv": 15688.361651455862,
+        "funding_coupon_component_expected": 8392.907749704958,
+        "credit_margin_component_expected": 3836.7578284365536,
+        "reference_coupon_expected": 12589.361624557438,
+        "reference_recovery_expected": 4017.5109468823857,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 16606.872571439824,
+        "reference_total_pv": 16035.686102081514,
+        "operating_fee_expected": 359.6960464159268,
+        "operating_fee_pv": 347.32445062565193,
+        "issuer_net_expected": 6.252776074688882e-13,
+        "issuer_net_pv": 6.03771444436531e-13
+      },
+      {
+        "period": 5,
+        "payment_date": "2027-11-24",
+        "year_fraction": 0.25,
+        "time_years": 1.25,
+        "survival_probability": 0.9492497594001752,
+        "default_probability": 0.009939697708962969,
+        "discount_factor": 0.9571932258697183,
+        "note_coupon_expected": 12102.934432352235,
+        "note_recovery_expected": 3975.879083585188,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 16078.813515937421,
+        "note_total_pv": 15390.531377477768,
+        "funding_coupon_component_expected": 8305.935394751534,
+        "credit_margin_component_expected": 3796.999037600701,
+        "reference_coupon_expected": 12458.903092127299,
+        "reference_recovery_expected": 3975.879083585188,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 16434.782175712488,
+        "reference_total_pv": 15731.262167236384,
+        "operating_fee_expected": 355.9686597750657,
+        "operating_fee_pv": 340.7307897586154,
+        "issuer_net_expected": 3.410605131648481e-13,
+        "issuer_net_pv": 3.264608128130425e-13
+      },
+      {
+        "period": 6,
+        "payment_date": "2028-02-24",
+        "year_fraction": 0.25,
+        "time_years": 1.5,
+        "survival_probability": 0.9394130628134758,
+        "default_probability": 0.00983669658669939,
+        "discount_factor": 0.9488543210558013,
+        "note_coupon_expected": 11977.516550871816,
+        "note_recovery_expected": 3934.6786346797558,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 15912.195185551573,
+        "note_total_pv": 15098.355159293927,
+        "funding_coupon_component_expected": 8219.864299617913,
+        "credit_margin_component_expected": 3757.652251253903,
+        "reference_coupon_expected": 12329.79644942687,
+        "reference_recovery_expected": 3934.6786346797558,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 16264.475084106627,
+        "reference_total_pv": 15432.61746325899,
+        "operating_fee_expected": 352.2798985550534,
+        "operating_fee_pv": 334.26230396506173,
+        "issuer_net_expected": 9.663381206337363e-13,
+        "issuer_net_pv": 9.169141013642627e-13
+      },
+      {
+        "period": 7,
+        "payment_date": "2028-05-24",
+        "year_fraction": 0.25,
+        "time_years": 1.75,
+        "survival_probability": 0.9296782999894985,
+        "default_probability": 0.009734762823977339,
+        "discount_factor": 0.9405880633643421,
+        "note_coupon_expected": 11853.398324866106,
+        "note_recovery_expected": 3893.9051295909353,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 15747.303454457042,
+        "note_total_pv": 14811.725659438363,
+        "funding_coupon_component_expected": 8134.685124908112,
+        "credit_margin_component_expected": 3718.713199957994,
+        "reference_coupon_expected": 12202.027687362168,
+        "reference_recovery_expected": 3893.9051295909353,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 16095.932816953104,
+        "reference_total_pv": 15139.642276340479,
+        "operating_fee_expected": 348.6293624960619,
+        "operating_fee_pv": 327.91661690211606,
+        "issuer_net_expected": -1.7053025658242404e-13,
+        "issuer_net_pv": -1.6039872378388658e-13
+      },
+      {
+        "period": 8,
+        "payment_date": "2028-08-24",
+        "year_fraction": 0.25,
+        "time_years": 2.0,
+        "survival_probability": 0.9200444146293233,
+        "default_probability": 0.009633885360175176,
+        "discount_factor": 0.9323938199059483,
+        "note_coupon_expected": 11730.566286523872,
+        "note_recovery_expected": 3853.5541440700704,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 15584.120430593943,
+        "note_total_pv": 14530.537578155818,
+        "funding_coupon_component_expected": 8050.388628006579,
+        "credit_margin_component_expected": 3680.177658517293,
+        "reference_coupon_expected": 12075.582942009869,
+        "reference_recovery_expected": 3853.5541440700704,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 15929.13708607994,
+        "reference_total_pv": 14852.228975495582,
+        "operating_fee_expected": 345.01665548599624,
+        "operating_fee_pv": 321.6913973397626,
+        "issuer_net_expected": 7.958078640513122e-13,
+        "issuer_net_pv": 7.420063342739965e-13
+      },
+      {
+        "period": 9,
+        "payment_date": "2028-11-24",
+        "year_fraction": 0.25,
+        "time_years": 2.25,
+        "survival_probability": 0.9105103613800342,
+        "default_probability": 0.009534053249289132,
+        "discount_factor": 0.9242709633048523,
+        "note_coupon_expected": 11609.007107595435,
+        "note_recovery_expected": 3813.6212997156526,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 15422.628407311087,
+        "note_total_pv": 14254.687614718197,
+        "funding_coupon_component_expected": 7966.9656620752985,
+        "credit_margin_component_expected": 3642.041445520136,
+        "reference_coupon_expected": 11950.448493112948,
+        "reference_recovery_expected": 3813.6212997156526,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 15764.0697928286,
+        "reference_total_pv": 14570.271973022614,
+        "operating_fee_expected": 341.4413855175128,
+        "operating_fee_pv": 315.584358304415,
+        "issuer_net_expected": 6.821210263296962e-13,
+        "issuer_net_pv": 6.304646580962428e-13
+      },
+      {
+        "period": 10,
+        "payment_date": "2029-02-24",
+        "year_fraction": 0.25,
+        "time_years": 2.5,
+        "survival_probability": 0.9010751057212906,
+        "default_probability": 0.009435255658743591,
+        "discount_factor": 0.9162188716508776,
+        "note_coupon_expected": 11488.707597946455,
+        "note_recovery_expected": 3774.1022634974365,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 15262.809861443891,
+        "note_total_pv": 13984.074429474009,
+        "funding_coupon_component_expected": 7884.407175061292,
+        "credit_margin_component_expected": 3604.3004228851632,
+        "reference_coupon_expected": 11826.61076259194,
+        "reference_recovery_expected": 3774.1022634974365,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 15600.713026089375,
+        "reference_total_pv": 14293.667685712755,
+        "operating_fee_expected": 337.90316464548397,
+        "operating_fee_pv": 309.59325623874605,
+        "issuer_net_expected": 1.7053025658242404e-13,
+        "issuer_net_pv": 1.562430392682832e-13
+      },
+      {
+        "period": 11,
+        "payment_date": "2029-05-24",
+        "year_fraction": 0.25,
+        "time_years": 2.75,
+        "survival_probability": 0.8917376238530735,
+        "default_probability": 0.009337481868217035,
+        "discount_factor": 0.9082369284518238,
+        "note_coupon_expected": 11369.654704126688,
+        "note_recovery_expected": 3734.992747286814,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 15104.6474514135,
+        "note_total_pv": 13718.598606619465,
+        "funding_coupon_component_expected": 7802.704208714394,
+        "credit_margin_component_expected": 3566.950495412294,
+        "reference_coupon_expected": 11704.056313071591,
+        "reference_recovery_expected": 3734.992747286814,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 15439.049060358404,
+        "reference_total_pv": 14022.314496796933,
+        "operating_fee_expected": 334.4016089449026,
+        "operating_fee_pv": 303.71589017746624,
+        "issuer_net_expected": 6.821210263296962e-13,
+        "issuer_net_pv": 6.195275057860889e-13
+      },
+      {
+        "period": 12,
+        "payment_date": "2029-08-24",
+        "year_fraction": 0.25,
+        "time_years": 3.0,
+        "survival_probability": 0.8824969025845955,
+        "default_probability": 0.00924072126847808,
+        "discount_factor": 0.9003245225862656,
+        "note_coupon_expected": 11251.835507953592,
+        "note_recovery_expected": 3696.288507391232,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 14948.124015344823,
+        "note_total_pv": 13458.16261767562,
+        "funding_coupon_component_expected": 7721.84789761521,
+        "credit_margin_component_expected": 3529.987610338382,
+        "reference_coupon_expected": 11582.771846422815,
+        "reference_recovery_expected": 3696.288507391232,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 15279.060353814046,
+        "reference_total_pv": 13756.11271861437,
+        "operating_fee_expected": 330.9363384692233,
+        "operating_fee_pv": 297.95010093875027,
+        "issuer_net_expected": -9.094947017729282e-13,
+        "issuer_net_pv": -8.188403831684496e-13
+      },
+      {
+        "period": 13,
+        "payment_date": "2029-11-24",
+        "year_fraction": 0.25,
+        "time_years": 3.25,
+        "survival_probability": 0.8733519392243602,
+        "default_probability": 0.009144963360235292,
+        "discount_factor": 0.8924810482567638,
+        "note_coupon_expected": 11135.237225110592,
+        "note_recovery_expected": 3657.985344094117,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 14793.222569204709,
+        "note_total_pv": 13202.670785659435,
+        "funding_coupon_component_expected": 7641.829468213152,
+        "credit_margin_component_expected": 3493.40775689744,
+        "reference_coupon_expected": 11462.744202319727,
+        "reference_recovery_expected": 3657.985344094117,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 15120.729546413844,
+        "reference_total_pv": 13494.964555990447,
+        "operating_fee_expected": 327.5069772091351,
+        "operating_fee_pv": 292.2937703310129,
+        "issuer_net_expected": 5.115907697472721e-13,
+        "issuer_net_pv": 4.565850664625301e-13
+      },
+      {
+        "period": 14,
+        "payment_date": "2030-02-24",
+        "year_fraction": 0.25,
+        "time_years": 3.5,
+        "survival_probability": 0.864301741471364,
+        "default_probability": 0.009050197752996203,
+        "discount_factor": 0.8847059049434836,
+        "note_coupon_expected": 11019.847203759891,
+        "note_recovery_expected": 3620.079101198481,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 14639.926304958371,
+        "note_total_pv": 12952.029249934105,
+        "funding_coupon_component_expected": 7562.640237874434,
+        "credit_margin_component_expected": 3457.206965885457,
+        "reference_coupon_expected": 11343.960356811653,
+        "reference_recovery_expected": 3620.079101198481,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 14964.039458010135,
+        "reference_total_pv": 13238.774070308851,
+        "operating_fee_expected": 324.11315305176146,
+        "operating_fee_pv": 286.7448203747444,
+        "issuer_net_expected": 1.7621459846850485e-12,
+        "issuer_net_pv": 1.5589809580233117e-12
+      },
+      {
+        "period": 15,
+        "payment_date": "2030-05-24",
+        "year_fraction": 0.25,
+        "time_years": 3.75,
+        "survival_probability": 0.8553453273074225,
+        "default_probability": 0.00895641416394144,
+        "discount_factor": 0.876998497358217,
+        "note_coupon_expected": 10905.652923169637,
+        "note_recovery_expected": 3582.565665576576,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 14488.218588746213,
+        "note_total_pv": 12706.145931727817,
+        "funding_coupon_component_expected": 7484.271613939947,
+        "credit_margin_component_expected": 3421.3813092296896,
+        "reference_coupon_expected": 11226.40742090992,
+        "reference_recovery_expected": 3582.565665576576,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 14808.973086486496,
+        "reference_total_pv": 12987.447144266935,
+        "operating_fee_expected": 320.75449774028345,
+        "operating_fee_pv": 281.3012125391182,
+        "issuer_net_expected": -3.410605131648481e-13,
+        "issuer_net_pv": -2.9910955755379414e-13
+      },
+      {
+        "period": 16,
+        "payment_date": "2030-08-24",
+        "year_fraction": 0.25,
+        "time_years": 4.0,
+        "survival_probability": 0.846481724890614,
+        "default_probability": 0.008863602416808503,
+        "discount_factor": 0.8693582353988059,
+        "note_coupon_expected": 10792.64199235533,
+        "note_recovery_expected": 3545.440966723401,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 14338.08295907873,
+        "note_total_pv": 12464.930500306375,
+        "funding_coupon_component_expected": 7406.715092792872,
+        "credit_margin_component_expected": 3385.926899562457,
+        "reference_coupon_expected": 11110.07263918931,
+        "reference_recovery_expected": 3545.440966723401,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 14655.51360591271,
+        "reference_total_pv": 12740.891447299464,
+        "operating_fee_expected": 317.43064683398023,
+        "operating_fee_pv": 275.9609469930906,
+        "issuer_net_expected": -1.7053025658242404e-13,
+        "issuer_net_pv": -1.4825188294460176e-13
+      },
+      {
+        "period": 17,
+        "payment_date": "2030-11-24",
+        "year_fraction": 0.25,
+        "time_years": 4.25,
+        "survival_probability": 0.837709972449827,
+        "default_probability": 0.008771752440786984,
+        "discount_factor": 0.8617845341039616,
+        "note_coupon_expected": 10680.802148735294,
+        "note_recovery_expected": 3508.7009763147935,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 14189.503125050087,
+        "note_total_pv": 12228.294339787997,
+        "funding_coupon_component_expected": 7329.962258935987,
+        "credit_margin_component_expected": 3350.8398897993075,
+        "reference_coupon_expected": 10994.943388403979,
+        "reference_recovery_expected": 3508.7009763147935,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 14503.644364718773,
+        "reference_total_pv": 12499.016401658717,
+        "operating_fee_expected": 314.14123966868516,
+        "operating_fee_pv": 270.7220618707188,
+        "issuer_net_expected": 1.3073986337985843e-12,
+        "issuer_net_pv": 1.126695922516269e-12
+      },
+      {
+        "period": 18,
+        "payment_date": "2031-02-24",
+        "year_fraction": 0.25,
+        "time_years": 4.5,
+        "survival_probability": 0.8290291181804004,
+        "default_probability": 0.008680854269426663,
+        "discount_factor": 0.8542768136084795,
+        "note_coupon_expected": 10570.121256800105,
+        "note_recovery_expected": 3472.3417077706654,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 14042.46296457077,
+        "note_total_pv": 11996.150516588601,
+        "funding_coupon_component_expected": 7254.004784078504,
+        "credit_margin_component_expected": 3316.116472721601,
+        "reference_coupon_expected": 10881.007176117755,
+        "reference_recovery_expected": 3472.3417077706654,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 14353.34888388842,
+        "reference_total_pv": 12261.733149139025,
+        "operating_fee_expected": 310.8859193176501,
+        "operating_fee_pv": 265.582632550425,
+        "issuer_net_expected": 2.8421709430404007e-13,
+        "issuer_net_pv": 2.428000736951161e-13
+      },
+      {
+        "period": 19,
+        "payment_date": "2031-05-24",
+        "year_fraction": 0.25,
+        "time_years": 4.75,
+        "survival_probability": 0.8204382201408447,
+        "default_probability": 0.008590898039555706,
+        "discount_factor": 0.8468344990988415,
+        "note_coupon_expected": 10460.58730679577,
+        "note_recovery_expected": 3436.3592158222823,
+        "note_principal_expected": 0.0,
+        "note_total_expected": 13896.946522618051,
+        "note_total_pv": 11768.413747484643,
+        "funding_coupon_component_expected": 7178.834426232391,
+        "credit_margin_component_expected": 3281.7528805633783,
+        "reference_coupon_expected": 10768.251639348586,
+        "reference_recovery_expected": 3436.3592158222823,
+        "reference_principal_expected": 0.0,
+        "reference_total_expected": 14204.610855170868,
+        "reference_total_pv": 12028.954518432587,
+        "operating_fee_expected": 307.66433255281675,
+        "operating_fee_pv": 260.54077094794394,
+        "issuer_net_expected": -1.1368683772161603e-13,
+        "issuer_net_pv": -9.627393627611598e-14
+      },
+      {
+        "period": 20,
+        "payment_date": "2031-08-24",
+        "year_fraction": 0.25,
+        "time_years": 5.0,
+        "survival_probability": 0.8119363461506349,
+        "default_probability": 0.00850187399020974,
+        "discount_factor": 0.8394570207692074,
+        "note_coupon_expected": 10352.188413420596,
+        "note_recovery_expected": 3400.7495960838964,
+        "note_principal_expected": 811936.3461506349,
+        "note_total_expected": 825689.2841601394,
+        "note_total_pv": 693130.6665621301,
+        "funding_coupon_component_expected": 7104.443028818056,
+        "credit_margin_component_expected": 3247.74538460254,
+        "reference_coupon_expected": 10656.664543227083,
+        "reference_recovery_expected": 3400.7495960838964,
+        "reference_principal_expected": 811936.3461506349,
+        "reference_total_expected": 825993.7602899459,
+        "reference_total_pv": 693386.2611869528,
+        "operating_fee_expected": 304.4761298064881,
+        "operating_fee_pv": 255.59462482269294,
+        "issuer_net_expected": -3.979039320256561e-12,
+        "issuer_net_pv": -3.3402324933061047e-12
+      }
+    ],
+    "validation": {
+      "all_passed": true,
+      "checks": [
+        {
+          "name": "probability_mass",
+          "passed": true,
+          "value": 0.0,
+          "tolerance": 1e-12
+        },
+        {
+          "name": "survival_is_non_increasing",
+          "passed": true,
+          "value": true
+        },
+        {
+          "name": "quarterly_schedule_count",
+          "passed": true,
+          "value": 20,
+          "expected": 20
+        },
+        {
+          "name": "note_cashflow_components_reconcile",
+          "passed": true,
+          "value": 9.094947017729282e-13,
+          "tolerance": 1e-08
+        },
+        {
+          "name": "fair_coupon_reaches_target_npv",
+          "passed": true,
+          "value": 6.366462912410498e-12,
+          "tolerance": 0.0001
+        },
+        {
+          "name": "all_numeric_outputs_are_finite",
+          "passed": true,
+          "value": true
+        }
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "scenario": "Base case",
+      "mode": "repack",
+      "credit_spread_bps": 250,
+      "recovery_rate_pct": 40,
+      "discount_rate_pct": 3.5,
+      "coupon_rate_pct": 5.1,
+      "hazard_rate_pct": 4.166666666666667,
+      "fair_coupon_rate_pct": 5.22154934201787,
+      "survival_to_maturity_pct": 81.19363461506349,
+      "investor_value_pct": 96.02945974482667,
+      "investor_npv": -14705.402551733423,
+      "issuer_npv": 4999.999999999997,
+      "validation_passed": true
+    },
+    {
+      "scenario": "Tighter credit",
+      "mode": "repack",
+      "credit_spread_bps": 150,
+      "recovery_rate_pct": 40,
+      "discount_rate_pct": 3.5,
+      "coupon_rate_pct": 5.1,
+      "hazard_rate_pct": 2.5,
+      "fair_coupon_rate_pct": 4.7501359473153455,
+      "survival_to_maturity_pct": 88.24969025845955,
+      "investor_value_pct": 100.24826360640652,
+      "investor_npv": 27482.63606406527,
+      "issuer_npv": -14999.999999999953,
+      "validation_passed": true
+    },
+    {
+      "scenario": "Wider credit",
+      "mode": "repack",
+      "credit_spread_bps": 425,
+      "recovery_rate_pct": 40,
+      "discount_rate_pct": 3.5,
+      "coupon_rate_pct": 5.1,
+      "hazard_rate_pct": 7.083333333333335,
+      "fair_coupon_rate_pct": 6.274498053507123,
+      "survival_to_maturity_pct": 70.175799794189,
+      "investor_value_pct": 89.4022194281774,
+      "investor_npv": -80977.80571822601,
+      "issuer_npv": 44999.99999999998,
+      "validation_passed": true
+    },
+    {
+      "scenario": "Default stress",
+      "mode": "repack",
+      "credit_spread_bps": 650,
+      "recovery_rate_pct": 20,
+      "discount_rate_pct": 4.5,
+      "coupon_rate_pct": 5.1,
+      "hazard_rate_pct": 8.125,
+      "fair_coupon_rate_pct": 8.25127923740738,
+      "survival_to_maturity_pct": 66.61436107034878,
+      "investor_value_pct": 77.7949062612742,
+      "investor_npv": -197050.93738725793,
+      "issuer_npv": 115000.0,
+      "validation_passed": true
+    }
+  ],
+  "sensitivity": [
+    {
+      "credit_spread_bps": 100.0,
+      "recovery_rate_pct": 20.0,
+      "hazard_rate_pct": 1.25,
+      "fair_coupon_rate_pct": 5.213014305152771,
+      "survival_to_maturity_pct": 93.94130628134758,
+      "expected_loss_pct": 4.846954974921935,
+      "investor_value_pct": 102.53098904985467,
+      "investor_npv": 50309.89049854677,
+      "issuer_npv": 4999.99999999997
+    },
+    {
+      "credit_spread_bps": 100.0,
+      "recovery_rate_pct": 35.0,
+      "hazard_rate_pct": 1.5384615384615383,
+      "fair_coupon_rate_pct": 5.213839939759261,
+      "survival_to_maturity_pct": 92.5961078642316,
+      "expected_loss_pct": 4.8125298882494585,
+      "investor_value_pct": 102.49987200329127,
+      "investor_npv": 49998.72003291268,
+      "issuer_npv": 4999.999999999979
+    },
+    {
+      "credit_spread_bps": 100.0,
+      "recovery_rate_pct": 50.0,
+      "hazard_rate_pct": 2.0,
+      "fair_coupon_rate_pct": 5.2151693904833545,
+      "survival_to_maturity_pct": 90.48374180359595,
+      "expected_loss_pct": 4.758129098202025,
+      "investor_value_pct": 102.45081512037808,
+      "investor_npv": 49508.1512037809,
+      "issuer_npv": 4999.999999999986
+    },
+    {
+      "credit_spread_bps": 100.0,
+      "recovery_rate_pct": 65.0,
+      "hazard_rate_pct": 2.857142857142857,
+      "fair_coupon_rate_pct": 5.217665933078417,
+      "survival_to_maturity_pct": 86.68778997501816,
+      "expected_loss_pct": 4.659273508743644,
+      "investor_value_pct": 102.36203968668521,
+      "investor_npv": 48620.39686685195,
+      "issuer_npv": 4999.9999999999845
+    },
+    {
+      "credit_spread_bps": 200.0,
+      "recovery_rate_pct": 20.0,
+      "hazard_rate_pct": 2.5,
+      "fair_coupon_rate_pct": 5.216621350894885,
+      "survival_to_maturity_pct": 88.24969025845955,
+      "expected_loss_pct": 9.400247793232362,
+      "investor_value_pct": 98.09786080086434,
+      "investor_npv": 5978.608008643379,
+      "issuer_npv": 5000.000000000046
+    },
+    {
+      "credit_spread_bps": 200.0,
+      "recovery_rate_pct": 35.0,
+      "hazard_rate_pct": 3.0769230769230766,
+      "fair_coupon_rate_pct": 5.2183118470535135,
+      "survival_to_maturity_pct": 85.74039191604413,
+      "expected_loss_pct": 9.268745254571312,
+      "investor_value_pct": 98.09733842544959,
+      "investor_npv": 5973.384254495846,
+      "issuer_npv": 5000.000000000076
+    },
+    {
+      "credit_spread_bps": 200.0,
+      "recovery_rate_pct": 50.0,
+      "hazard_rate_pct": 4.0,
+      "fair_coupon_rate_pct": 5.22105043906937,
+      "survival_to_maturity_pct": 81.87307530779819,
+      "expected_loss_pct": 9.06346234610091,
+      "investor_value_pct": 98.09698912486866,
+      "investor_npv": 5969.891248686472,
+      "issuer_npv": 4999.999999999952
+    },
+    {
+      "credit_spread_bps": 200.0,
+      "recovery_rate_pct": 65.0,
+      "hazard_rate_pct": 5.714285714285714,
+      "fair_coupon_rate_pct": 5.226246812233248,
+      "survival_to_maturity_pct": 75.14772930752859,
+      "expected_loss_pct": 8.698294742364993,
+      "investor_value_pct": 98.09780916610508,
+      "investor_npv": 5978.091661050799,
+      "issuer_npv": 5000.000000000029
+    },
+    {
+      "credit_spread_bps": 300.0,
+      "recovery_rate_pct": 20.0,
+      "hazard_rate_pct": 3.75,
+      "fair_coupon_rate_pct": 5.220304628502154,
+      "survival_to_maturity_pct": 82.90291181804004,
+      "expected_loss_pct": 13.677670545567972,
+      "investor_value_pct": 93.92136749968451,
+      "investor_npv": -35786.325003154925,
+      "issuer_npv": 4999.999999999963
+    },
+    {
+      "credit_spread_bps": 300.0,
+      "recovery_rate_pct": 35.0,
+      "hazard_rate_pct": 4.615384615384615,
+      "fair_coupon_rate_pct": 5.222899286396405,
+      "survival_to_maturity_pct": 79.39226578179513,
+      "expected_loss_pct": 13.395027241833162,
+      "investor_value_pct": 94.00513834133423,
+      "investor_npv": -34948.61658665771,
+      "issuer_npv": 4999.999999999991
+    },
+    {
+      "credit_spread_bps": 300.0,
+      "recovery_rate_pct": 50.0,
+      "hazard_rate_pct": 6.0,
+      "fair_coupon_rate_pct": 5.227126831290288,
+      "survival_to_maturity_pct": 74.08182206817179,
+      "expected_loss_pct": 12.959088965914106,
+      "investor_value_pct": 94.13539223488951,
+      "investor_npv": -33646.07765110489,
+      "issuer_npv": 4999.999999999937
+    },
+    {
+      "credit_spread_bps": 300.0,
+      "recovery_rate_pct": 65.0,
+      "hazard_rate_pct": 8.571428571428571,
+      "fair_coupon_rate_pct": 5.235226323748901,
+      "survival_to_maturity_pct": 65.14390575310556,
+      "expected_loss_pct": 12.199632986413054,
+      "investor_value_pct": 94.36547234753614,
+      "investor_npv": -31345.27652463864,
+      "issuer_npv": 4999.999999999937
+    },
+    {
+      "credit_spread_bps": 450.0,
+      "recovery_rate_pct": 20.0,
+      "hazard_rate_pct": 5.624999999999999,
+      "fair_coupon_rate_pct": 5.2259726239938,
+      "survival_to_maturity_pct": 75.48396019890073,
+      "expected_loss_pct": 19.612831840879412,
+      "investor_value_pct": 88.1048335663335,
+      "investor_npv": -93951.66433666507,
+      "issuer_npv": 5000.000000000064
+    },
+    {
+      "credit_spread_bps": 450.0,
+      "recovery_rate_pct": 35.0,
+      "hazard_rate_pct": 6.9230769230769225,
+      "fair_coupon_rate_pct": 5.229997215175543,
+      "survival_to_maturity_pct": 70.74036474040616,
+      "expected_loss_pct": 19.01876291873599,
+      "investor_value_pct": 88.40014571937796,
+      "investor_npv": -90998.54280622047,
+      "issuer_npv": 5000.000000000033
+    },
+    {
+      "credit_spread_bps": 450.0,
+      "recovery_rate_pct": 50.0,
+      "hazard_rate_pct": 9.0,
+      "fair_coupon_rate_pct": 5.236607587349354,
+      "survival_to_maturity_pct": 63.76281516217733,
+      "expected_loss_pct": 18.118592418911334,
+      "investor_value_pct": 88.8499744931396,
+      "investor_npv": -86500.25506860402,
+      "issuer_npv": 4999.999999999961
+    },
+    {
+      "credit_spread_bps": 450.0,
+      "recovery_rate_pct": 65.0,
+      "hazard_rate_pct": 12.85714285714286,
+      "fair_coupon_rate_pct": 5.249440475271508,
+      "survival_to_maturity_pct": 52.578802442577974,
+      "expected_loss_pct": 16.597419145097707,
+      "investor_value_pct": 89.61697280819739,
+      "investor_npv": -78830.27191802603,
+      "issuer_npv": 5000.000000000003
+    },
+    {
+      "credit_spread_bps": 650.0,
+      "recovery_rate_pct": 20.0,
+      "hazard_rate_pct": 8.125,
+      "fair_coupon_rate_pct": 5.23379702358477,
+      "survival_to_maturity_pct": 66.61436107034878,
+      "expected_loss_pct": 26.708511143720976,
+      "investor_value_pct": 81.11333924872751,
+      "investor_npv": -163866.60751272494,
+      "issuer_npv": 5000.0
+    },
+    {
+      "credit_spread_bps": 650.0,
+      "recovery_rate_pct": 35.0,
+      "hazard_rate_pct": 10.0,
+      "fair_coupon_rate_pct": 5.239865302697849,
+      "survival_to_maturity_pct": 60.653065971263345,
+      "expected_loss_pct": 25.575507118678825,
+      "investor_value_pct": 81.81721917346397,
+      "investor_npv": -156827.8082653603,
+      "issuer_npv": 5000.000000000067
+    },
+    {
+      "credit_spread_bps": 650.0,
+      "recovery_rate_pct": 50.0,
+      "hazard_rate_pct": 13.0,
+      "fair_coupon_rate_pct": 5.2499295989162515,
+      "survival_to_maturity_pct": 52.20457767610161,
+      "expected_loss_pct": 23.897711161949196,
+      "investor_value_pct": 82.86441816249153,
+      "investor_npv": -146355.81837508478,
+      "issuer_npv": 5000.000000000043
+    },
+    {
+      "credit_spread_bps": 650.0,
+      "recovery_rate_pct": 65.0,
+      "hazard_rate_pct": 18.571428571428573,
+      "fair_coupon_rate_pct": 5.269767988917869,
+      "survival_to_maturity_pct": 39.51177613268873,
+      "expected_loss_pct": 21.170878353558948,
+      "investor_value_pct": 84.57991412534417,
+      "investor_npv": -129200.85874655831,
+      "issuer_npv": 5000.000000000015
+    }
+  ],
+  "default_paths": {
+    "settlement_convention": "recovery on the first quarterly date after default; coupons only on preceding dates; no post-default cash flows",
+    "paths": [
+      {
+        "scenario": "Default at 1.25 years",
+        "default_time_years": 1.25,
+        "credit_event": true,
+        "recovery_rate_pct": 40,
+        "settlement_date": "2028-02-24",
+        "total_investor_payoff": 451000.0,
+        "net_undiscounted_cashflow": -524000.0,
+        "cashflows": [
+          {
+            "date": "2026-08-24",
+            "time_years": 0.0,
+            "type": "subscription",
+            "amount": -975000.0
+          },
+          {
+            "date": "2026-11-24",
+            "time_years": 0.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-02-24",
+            "time_years": 0.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-05-24",
+            "time_years": 0.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-08-24",
+            "time_years": 1.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-02-24",
+            "time_years": 1.5,
+            "type": "recovery",
+            "amount": 400000.0
+          }
+        ]
+      },
+      {
+        "scenario": "Default at 3.00 years",
+        "default_time_years": 3.0,
+        "credit_event": true,
+        "recovery_rate_pct": 40,
+        "settlement_date": "2029-11-24",
+        "total_investor_payoff": 540250.0,
+        "net_undiscounted_cashflow": -434750.0,
+        "cashflows": [
+          {
+            "date": "2026-08-24",
+            "time_years": 0.0,
+            "type": "subscription",
+            "amount": -975000.0
+          },
+          {
+            "date": "2026-11-24",
+            "time_years": 0.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-02-24",
+            "time_years": 0.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-05-24",
+            "time_years": 0.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-08-24",
+            "time_years": 1.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-11-24",
+            "time_years": 1.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-02-24",
+            "time_years": 1.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-05-24",
+            "time_years": 1.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-08-24",
+            "time_years": 2.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-11-24",
+            "time_years": 2.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-02-24",
+            "time_years": 2.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-05-24",
+            "time_years": 2.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-11-24",
+            "time_years": 3.25,
+            "type": "recovery",
+            "amount": 400000.0
+          }
+        ]
+      },
+      {
+        "scenario": "Default at 4.75 years",
+        "default_time_years": 4.75,
+        "credit_event": true,
+        "recovery_rate_pct": 40,
+        "settlement_date": "2031-08-24",
+        "total_investor_payoff": 629500.0,
+        "net_undiscounted_cashflow": -345500.0,
+        "cashflows": [
+          {
+            "date": "2026-08-24",
+            "time_years": 0.0,
+            "type": "subscription",
+            "amount": -975000.0
+          },
+          {
+            "date": "2026-11-24",
+            "time_years": 0.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-02-24",
+            "time_years": 0.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-05-24",
+            "time_years": 0.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-08-24",
+            "time_years": 1.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-11-24",
+            "time_years": 1.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-02-24",
+            "time_years": 1.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-05-24",
+            "time_years": 1.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-08-24",
+            "time_years": 2.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-11-24",
+            "time_years": 2.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-02-24",
+            "time_years": 2.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-05-24",
+            "time_years": 2.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-08-24",
+            "time_years": 3.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-11-24",
+            "time_years": 3.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2030-02-24",
+            "time_years": 3.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2030-05-24",
+            "time_years": 3.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2030-08-24",
+            "time_years": 4.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2030-11-24",
+            "time_years": 4.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2031-02-24",
+            "time_years": 4.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2031-08-24",
+            "time_years": 5.0,
+            "type": "recovery",
+            "amount": 400000.0
+          }
+        ]
+      },
+      {
+        "scenario": "No default",
+        "default_time_years": null,
+        "credit_event": false,
+        "recovery_rate_pct": 40,
+        "settlement_date": "2031-08-24",
+        "total_investor_payoff": 1255000.0,
+        "net_undiscounted_cashflow": 280000.0,
+        "cashflows": [
+          {
+            "date": "2026-08-24",
+            "time_years": 0.0,
+            "type": "subscription",
+            "amount": -975000.0
+          },
+          {
+            "date": "2026-11-24",
+            "time_years": 0.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-02-24",
+            "time_years": 0.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-05-24",
+            "time_years": 0.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-08-24",
+            "time_years": 1.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2027-11-24",
+            "time_years": 1.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-02-24",
+            "time_years": 1.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-05-24",
+            "time_years": 1.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-08-24",
+            "time_years": 2.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2028-11-24",
+            "time_years": 2.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-02-24",
+            "time_years": 2.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-05-24",
+            "time_years": 2.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-08-24",
+            "time_years": 3.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2029-11-24",
+            "time_years": 3.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2030-02-24",
+            "time_years": 3.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2030-05-24",
+            "time_years": 3.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2030-08-24",
+            "time_years": 4.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2030-11-24",
+            "time_years": 4.25,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2031-02-24",
+            "time_years": 4.5,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2031-05-24",
+            "time_years": 4.75,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2031-08-24",
+            "time_years": 5.0,
+            "type": "coupon",
+            "amount": 12750.0
+          },
+          {
+            "date": "2031-08-24",
+            "time_years": 5.0,
+            "type": "principal",
+            "amount": 1000000
+          }
+        ]
+      }
+    ]
+  }
+}

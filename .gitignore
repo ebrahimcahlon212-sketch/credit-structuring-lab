@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Test and analysis caches
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local editor and operating-system files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+~$*.xlsx
+*.inspect.ndjson
+tools/node_modules/
+
+# Regenerable runtime data
+outputs/*.sqlite
+outputs/*.sqlite3
+outputs/*_results.json
+outputs/*_sensitivity.csv
+outputs/*_crosscheck.json
+
+# Keep the canonical reviewer examples
+!outputs/base_case_results.json
+!outputs/sensitivity.csv
+!outputs/excel_crosscheck.json
+!outputs/repack_case_results.json
+!outputs/repack_case_sensitivity.csv

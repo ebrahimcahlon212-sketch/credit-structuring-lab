@@ -1,0 +1,47 @@
+{
+  "name": "Five-year bond cash-flow repack",
+  "description": "Limited-recourse pass-through of a fixed-rate reference bond into a funded note.",
+  "mode": "repack",
+  "valuation_date": "2026-08-24",
+  "notional": 1000000,
+  "term_years": 5,
+  "payments_per_year": 4,
+  "issue_price_pct": 97.5,
+  "coupon_rate_pct": 5.1,
+  "credit_spread_bps": 250,
+  "recovery_rate_pct": 40,
+  "discount_rate_pct": 3.5,
+  "funding_rate_pct": 3.5,
+  "reference_coupon_rate_pct": 5.25,
+  "reference_price_pct": 97,
+  "annual_fee_bps": 15,
+  "scenarios": [
+    {
+      "name": "Tighter credit",
+      "overrides": {
+        "credit_spread_bps": 150,
+        "reference_price_pct": 99
+      }
+    },
+    {
+      "name": "Wider credit",
+      "overrides": {
+        "credit_spread_bps": 425,
+        "reference_price_pct": 93
+      }
+    },
+    {
+      "name": "Default stress",
+      "overrides": {
+        "credit_spread_bps": 650,
+        "recovery_rate_pct": 20,
+        "reference_price_pct": 86,
+        "discount_rate_pct": 4.5
+      }
+    }
+  ],
+  "sensitivity": {
+    "credit_spreads_bps": [100, 200, 300, 450, 650],
+    "recovery_rates_pct": [20, 35, 50, 65]
+  }
+}
