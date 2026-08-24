@@ -2,7 +2,7 @@
 
 A small Python engine that turns the terms of a single-name credit-linked note, or a simple bond repack, into quarterly expected cash flows, a fair coupon, named scenarios and a spread/recovery sensitivity grid. There is also an Excel version of the model for anyone who wants to review it without installing anything.
 
-I built this to get the cash-flow mechanics properly into my hands: where the money comes from each quarter, what a wider spread actually does to a fixed note coupon, and what the issuer side of the ticket looks like next to the investor's. It is a learning project, not a pricer — see Scope below.
+I built this to get the cash-flow mechanics properly into my hands: where the money comes from each quarter, what a wider spread actually does to a fixed note coupon, and what the issuer side of the ticket looks like next to the investor's. It is a learning project, not a pricer, see Scope below.
 
 ## What it does
 
