@@ -2,9 +2,9 @@
 
 ## Purpose
 
-Credit Structuring Lab is an educational expected-cash-flow engine for a stylised single-name credit-linked note and a simple cash-pass-through bond repack. It is intended to demonstrate product reasoning, transparent modelling, repeatable scenario analysis and control-minded implementation.
+Credit Structuring Lab is an educational expected-cash-flow engine for a stylised single-name credit-linked note and a simple cash-pass-through bond repack. I wrote it to work through the product mechanics by hand and to keep every assumption visible.
 
-The engine is not a production valuation library, an ISDA-compliant model, an executable quote or a substitute for transaction documentation.
+It is not a production valuation library or an executable quote.
 
 ## Model perimeter
 
@@ -224,11 +224,9 @@ Each grid row reports hazard, fair coupon, survival, expected loss, investor val
 
 The command-line workflow writes a detailed JSON result and a sensitivity CSV. It also stores the input payload and normalised scenario summaries in SQLite.
 
-The SQLite schema separates model runs from scenario results. Foreign keys are enabled, run insertion is atomic and comparison queries are parameterised. This is a lightweight run-history demonstration, not a booking system or trade database.
+The SQLite schema separates model runs from scenario results. Foreign keys are enabled, run insertion is atomic and comparison queries are parameterised. This is a lightweight run history, not a booking system or trade database.
 
 `outputs/excel_crosscheck.json` exposes a small set of CLN metrics in decimal or currency form for workbook QA. The prebuilt Excel file is located at `excel/Credit_Structuring_Cash_Flow_Engine.xlsx`. Python remains the calculation source of truth.
-
-The workbook can be regenerated from the repository root with `node tools/build_excel_model.mjs .` in a local Node environment that has `@oai/artifact-tool` installed. Regeneration is optional because the completed workbook is checked in.
 
 ## Automated controls
 
@@ -257,17 +255,13 @@ The unit suite also checks hazard arithmetic, payment dates, credit-event settle
 - The repack excludes swaps, currency conversion, embedded options, liquidation, security enforcement and detailed payment priorities.
 - Liquidity, bid-offer, bond-CDS basis, CVA, FVA, MVA, capital, tax and accounting effects are outside scope.
 - There is no live market-data ingestion, calibration governance, independent price verification or production change control.
-- Results are educational analytics, not investment advice, legal advice, an offer or a recommendation to transact.
 
 ## Reproducibility and review
 
 Inputs are human-readable JSON. Core calculations are deterministic functions. Generated results include the model methodology, terms, cash-flow rows and check values. SQLite preserves run identifiers and timestamps for comparison. Git and CI provide an auditable history of code and tests.
 
-For interview discussion, the most relevant extension would be a properly calibrated term structure with dated market conventions. Other useful extensions include realised XIRR, an asset-swap repack, counterparty exposure and controlled market-data ingestion. Each would need additional legal, quantitative and operational assumptions.
+If I took this further, the first step would be a calibrated CDS term structure with real date conventions. After that: XIRR on the event paths, and an asset-swap repack with an actual swap leg.
 
-## CV-safe description
+## Licence
 
-- Built a Python cash-flow engine for a stylised single-name credit-linked note and simple bond repack, linking reference-asset and investor-note cash flows under survival and credit-event scenarios.
-- Automated credit-spread and recovery sensitivities with Excel reporting, reconciliation controls, unit tests, SQLite run comparison and a version-controlled Git workflow.
-
-These statements describe this repository's implemented scope. They deliberately avoid claims of production pricing, ISDA compliance, executable quoting or secured-funding mechanics.
+Released under the MIT License.
